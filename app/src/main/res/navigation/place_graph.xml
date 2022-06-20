@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/place_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.morfitimelocal.ui.place.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_homeDialogFragment"
+            app:destination="@id/homeDialogFragment"/>
+
+        <action
+            android:id="@+id/action_homeFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.morfitimelocal.ui.place.booking.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking">
+        <action
+            android:id="@+id/action_bookingFragment_to_bookingDialogFragment"
+            app:destination="@id/bookingDialogFragment"/>
+
+        <action
+            android:id="@+id/action_bookingFragment_to_sectorFragment"
+            app:destination="@id/sectorFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/sectorFragment"
+        android:name="com.morfitimelocal.ui.place.sector.SectorFragment"
+        android:label="fragment_sector"
+        tools:layout="@layout/fragment_sector">
+        <action
+            android:id="@+id/action_sectorFragment_to_sectorDialogFragment"
+            app:destination="@id/sectorDialogFragment"/>
+
+        <action
+            android:id="@+id/action_sectorFragment_to_ubicationFragment"
+            app:destination="@id/ubicationFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ubicationFragment"
+        android:name="com.morfitimelocal.ui.place.ubication.UbicationFragment"
+        android:label="fragment_ubication"
+        tools:layout="@layout/fragment_ubication">
+        <action
+            android:id="@+id/action_ubicationFragment_to_accountFragment"
+            app:destination="@id/accountFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.morfitimelocal.ui.place.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account">
+    </fragment>
+
+    <dialog
+        android:id="@+id/homeDialogFragment"
+        android:name="com.morfitimelocal.ui.place.home.dialogs.HomeDialogFragment"
+        android:label="fragment_home_dialog"
+        tools:layout="@layout/fragment_home_dialog"/>
+
+    <dialog
+        android:id="@+id/bookingDialogFragment"
+        android:name="com.morfitimelocal.ui.place.booking.dialogs.BookingDialogFragment"
+        android:label="fragment_booking_dialog"
+        tools:layout="@layout/fragment_booking_dialog"/>
+
+    <dialog
+        android:id="@+id/sectorDialogFragment"
+        android:name="com.morfitimelocal.ui.place.sector.dialogs.SectorDialogFragment"
+        android:label="fragment_admin_sector_new_dialog"
+        tools:layout="@layout/fragment_sector_dialog"/>
+
+</navigation>

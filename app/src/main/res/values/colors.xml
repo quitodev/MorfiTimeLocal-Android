@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF9877</color>
+    <color name="colorPrimary">#FF7B51</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorSecondary">#FFE7CA</color>
+    <color name="colorText">#FFC27A</color>
+    <color name="colorIcon">#FF5548</color>
+    <color name="colorLink">#951F16</color>
+    <color name="colorBackground">#D6D6D6</color>
+    <color name="colorItemSelected">#FF7B51</color>
+    <color name="colorBottomNav">#323232</color>
+    <color name="colorDisabled">#505050</color>
+</resources>

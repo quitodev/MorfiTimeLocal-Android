@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.place.booking.dialogs.BookingDialogFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/colorBackground"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="Confirmá tu reserva"
+                        android:textSize="24sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="5dp"
+                        android:text="Día y horario"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_schedule"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/textSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="Día y horario del turno"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawablePadding="5dp"
+                        android:text="Lugar"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_address"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/textPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="Nombre del lugar"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawablePadding="5dp"
+                        android:text="Sector"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_sectors"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/textSector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="Nombre del sector"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="20dp"
+                        tools:src="@drawable/ic_logo"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/colorBackground"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:text="Reserva para"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_people"
+                        tools:ignore="HardcodedText" />
+                    <SeekBar
+                        android:id="@+id/barPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginStart="1dp" />
+                    <TextView
+                        android:id="@+id/textPeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 persona"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawablePadding="5dp"
+                        android:text="A nombre de"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_user"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/textUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="Nombre del usuario"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawablePadding="5dp"
+                        android:text="Tiempo de reserva"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_timer"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/textLimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="30 minutos"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawablePadding="5dp"
+                        android:text="Mesa (opcional)"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_table"
+                        tools:ignore="HardcodedText" />
+                    <EditText
+                        android:id="@+id/editTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:background="#00000000"
+                        android:gravity="center"
+                        android:hint="Ingresá el número de mesa..."
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:textColor="@color/color_edit_text_selector"
+                        android:textSize="18sp"
+                        tools:ignore="AutoFill,HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:drawablePadding="5dp"
+                        android:text="Comentarios (opcional)"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_comment"
+                        tools:ignore="HardcodedText" />
+                    <EditText
+                        android:id="@+id/editComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:background="#00000000"
+                        android:gravity="center"
+                        android:hint="Algo que quieras agregar..."
+                        android:inputType="textPersonName"
+                        android:maxLength="150"
+                        android:textColor="@color/color_edit_text_selector"
+                        android:textSize="18sp"
+                        tools:ignore="AutoFill,HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardConfirm"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="30dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="4dp">
+                    <TextView
+                        android:id="@+id/textConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="CONFIRMAR RESERVA"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardClose"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/cardConfirm"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="4dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="CERRAR"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutDone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_dialog_ok" />
+    </RelativeLayout>
+
+</FrameLayout>
